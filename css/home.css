@@ -1,0 +1,244 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 2, 2022, 4:59:26 PM
+    Author     : ASUS
+*/
+
+body {
+    background-color: wheat;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("assets/images/banner-image.jpg");
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-img-no {
+    /* The image used */
+    background-image: url("");
+    /*background-image: url("assets/images/gallery-2.jpg");*/
+    min-height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.btn-group button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+
+/*-----------------------------------------------------------------------------*/
+div {
+    margin-bottom: 5px;
+    margin-left: 10px;                    
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    height: 30px; 
+    color: green;
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    /*    background-color: yellowgreen;
+        border-width: 3px; 
+        border-style: solid; 
+        border-color: yellowgreen;*/
+}
+
+select {
+    display: inline-block;
+    width: 200px;
+    text-align: left;                   
+    background-color: white;
+    font-size: medium;
+    height: 30px;  
+}
+
+input {
+    /*padding: 5px 10px;*/
+    display: inline-block;
+    width: 150px;
+    text-align: left;                   
+    background-color: white;
+    font-size: medium;
+    height: 30px;  
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+.content-wide {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;                     
+}
+
+.formfield * {
+    vertical-align: middle;
+}
+
+.relative {
+    padding: 10px;
+    position: relative;
+    background-color: inherit;
+    margin: 2px;
+} 
+.navitem {
+    display: inline-block;
+    width: 120px; 
+    height: 30px; 
+    text-align: center;
+    border: gray;
+    background-color: #E8562A;
+    color: #fff;
+    cursor: default;
+    font-weight: bold;
+    font-size: medium;
+}
